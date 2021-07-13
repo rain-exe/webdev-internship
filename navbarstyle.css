@@ -10,6 +10,10 @@
     #navContent {
         display: none;
     }
+
+    .wideNav {
+        display: none;
+    }
     
     .link, .link:hover, .link:active, .link:visited, .link:focus {
         display: block;
@@ -24,13 +28,17 @@
  
 @media (min-width:768px) {
     .xsContainer {display:none;}
-    #navbar {
+    .wideNav {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 60px;
         background-color: rgb(97, 97, 97);
+    }
+
+    #navbar {
+        display: none;
     }
     
     .link, .link:hover, .link:active, .link:visited, .link:focus {
