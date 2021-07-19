@@ -1,16 +1,16 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyDXltZ4eDwJVXNrPaozhWIBxsWtBHDdhX0",
-    authDomain: "internship-webdev.firebaseapp.com",
-    projectId: "internship-webdev",
-    storageBucket: "internship-webdev.appspot.com",
-    messagingSenderId: "390967750780",
-    appId: "1:390967750780:web:e482575eeb93255bea19f9",
-    measurementId: "G-YFH4Q1PYNX"
-  };
+// var firebaseConfig = {
+//     apiKey: "AIzaSyDXltZ4eDwJVXNrPaozhWIBxsWtBHDdhX0",
+//     authDomain: "internship-webdev.firebaseapp.com",
+//     projectId: "internship-webdev",
+//     storageBucket: "internship-webdev.appspot.com",
+//     messagingSenderId: "390967750780",
+//     appId: "1:390967750780:web:e482575eeb93255bea19f9",
+//     measurementId: "G-YFH4Q1PYNX"
+//   };
 
-  firebase.initializeApp(firebaseConfig);
+//   firebase.initializeApp(firebaseConfig);
 
-  const db = firebase.firestore();
+//   const db = firebase.firestore();
 
   //Carousel
 //Carousel
