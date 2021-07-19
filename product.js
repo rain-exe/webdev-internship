@@ -13,33 +13,41 @@ var firebaseConfig = {
   const db = firebase.firestore();
 
   //Carousel
-  db.collection("Home Page").where("isCarousel", "==", true)
-        .get()
-        .then((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-              console.log(doc.id, " => ", doc.data());
-              document.getElementById("Carousel-Image-1").src = "https://res.cloudinary.com/dvv9fvblr/image/upload/v1625213423/so8vebsg3hc6cdn69urd.jpg";
-              document.getElementById("Carousel-Image-2").src = "https://res.cloudinary.com/dvv9fvblr/image/upload/v1625213727/mff295jr3kxepmbckowd.jpg";
-              document.getElementById("Carousel-Image-3").src = "https://res.cloudinary.com/dvv9fvblr/image/upload/v1625213551/fwj6zc2vbcbdiqkeuoye.jpg";
-            });
-        })
-        .catch((error) => {
-            console.log("Error getting documents: ", error);
-        });
-        
+//Carousel
+db.collection("Home Page").where("isCarousel", "==", true)
+      .get()
+      .then((querySnapshot) => {
+          const mappings = {
+            0: 'Carousel-Image-1',
+            1: "Carousel-Image-2",
+            2: "Carousel-Image-3"
+          }
 
-  
-  //Create Hamper
-  db.collection("Home Page").where("isBanner", "==", true)
-  .get()
-  .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-        document.getElementById("Image-1").src = 'https://res.cloudinary.com/dvv9fvblr/image/upload/v1613376920/y21avghl1kw2bbmbn2re.jpg'
+          let i = 0;
+          querySnapshot.forEach((doc) => {
+            console.log(doc.id, " => ", doc.data());
+            document.getElementById(mappings[i]).src = doc.data().img;
+            i++;
+          });
+      })
+      .catch((error) => {
+          console.log("Error getting documents: ", error);
       });
-  })
-  .catch((error) => {
-      console.log("Error getting documents: ", error);
-  });
+      
+
+
+//Create Hamper
+db.collection("Home Page").where("isBanner", "==", true)
+.get()
+.then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      console.log(doc.id, " => ", doc.data());
+      document.getElementById("Image-1").src = doc.data().img;
+    });
+})
+.catch((error) => {
+    console.log("Error getting documents: ", error);
+});
+
 
     
