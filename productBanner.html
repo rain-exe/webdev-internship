@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+
+  <link rel="stylesheet" href="ProductBanner.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/a6c3daf016.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+  <script src="product.js"></script>
+  
+</head>
+<body>
+
+   <!--TOP NOTE-->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="website-banner" style="background-color:#d2cbcb;color:#151414!important;">
+                    Please note - Orders containing alcohol will be dispatched after the alcohol ban has been lifted.</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--BANNER-->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-7">
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                      <!--Image 1-->
+                      <div class="carousel-item active" >
+                        <a href="/design-hamper/">
+                        <img id = "Carousel-Image-1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="img-overlay">
+                                <h2>Get Well<br>Soon Hampers</h2>
+                                <img src="https://www.giftlady.co.za/images/icons/arrow-right-wht.png" alt="Arrow">
+                            </div>
+                        </div>
+                        </a>
+                      </div>
+
+                      <!--Image 2-->
+                      <div class="carousel-item" id = "Carousel Image 2">
+                          <a href="/design-hamper/">
+                        <img id = "Carousel-Image-2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="img-overlay">
+                            <h2>Stay Strong<br>Fight On</h2>
+                            <img src="https://www.giftlady.co.za/images/icons/arrow-right-wht.png" alt="Arrow">
+                            </div>
+                        </div>
+                       </a>
+                      </div>
+
+                      <!--Image 3-->
+                      <div class="carousel-item" id = "Carousel Image 3">
+                        <a href="/design-hamper/">
+                        <img id = "Carousel-Image-3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="img-overlay">
+                                <h2>Support Project Hope<br>Feed A Family</h2>
+                                <img src="https://www.giftlady.co.za/images/icons/arrow-right-wht.png" alt="Arrow">
+                            </div>
+                        </div>
+                      </div>
+                      </a>
+
+
+                    </div>
+
+                    <!--Button-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                
+                </div>
+
+            </div>
+
+            
+            
+            
+         <!--CREATE HAMPER-->
+       <div class="col-md-5">
+        <a href="/design-hamper/">
+            <img class = "image-wrapper" id = "Image-1" >
+                <div class="img-overlay">
+                    <h2>Create A<br> Hamper</h2>
+                    <img src="https://www.giftlady.co.za/images/icons/arrow-right-wht.png" alt="Arrow">
+                </div>
+            </div>
+        </a>
+    </div>
+
+        </div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
