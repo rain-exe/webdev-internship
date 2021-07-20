@@ -6,7 +6,8 @@ body {
     td {
       margin: 5pt;
     }
-    input[type=text] {
+    .bottomInput[type=text] {
+      margin: 0px 20px 0px 0px;
       font-size: 14pt;
       padding: 10px;
       border: 0;
@@ -36,4 +37,5 @@ body {
     }
     ul li {
       margin: 5px;
+      font-size: 16px;
     }
