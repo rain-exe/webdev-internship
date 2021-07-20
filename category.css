@@ -8,7 +8,16 @@
     .bigContainer {display: none;}
 }
 
-h1 {
+.bigContainer {
+    margin-top: 50px;
+}
+
+.smallContainer {
+    margin-top: 20px;
+}
+
+.productsHeader {
+    font-size: 35px;
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
 }

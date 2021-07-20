@@ -51,6 +51,7 @@ async function bigFunction() {
             var image = document.createElement("img");
             div.className = "col-md-2";
             div.style.padding = "0px";
+            anchor.style.textDecoration = "none";
             anchor.href = "#";
             image.src = categories[i+add].img
             image.style.maxWidth = "100%";
@@ -95,6 +96,7 @@ async function smallFunction() {
             div.className = "col-5";
             div.style.padding = "0px";
             div.style.margin = "0px 10px"
+            anchor.style.textDecoration = "none";
             anchor.href = "#";
             image.src = categories[i+add].img
             image.style.maxWidth = "100%";
